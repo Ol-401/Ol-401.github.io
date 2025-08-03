@@ -23,5 +23,3 @@ Everyday behaviour:
 
 
 I do not believe that Critical Thinking is something that will ever be able to provide absolute certainty. But cultivating a questioning, reflective and critical nature will help one navigate this world of overflowing information. The path may be winding, but it is one worth walking, so I invite you to explore with me this labyrinth of truth and illusion. 
-
-
