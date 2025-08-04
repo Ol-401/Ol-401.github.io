@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is the point of Critical Thinking?
+date: 2020-04-03
 ---
 From what I have experienced, most disciplines are composed largely of facts which tell us what to think, wheras critical thinking is a methodology for how to think. A methodology which seems to show up everywhere in life:
 
