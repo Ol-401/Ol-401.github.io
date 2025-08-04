@@ -4,7 +4,6 @@ tagline:             ''
 description:         'A Critical thought a day keeps the assumptions away'
 url:                 https://Ol-401.github.io
 baseurl:             ''
-paginate:            5
 permalink:           pretty
 
 # About/contact
@@ -13,9 +12,7 @@ author:
   url:               ""
   email:             oliver.claxton05@gmail.com
 
-# Gems
-plugins:
-  - jekyll-paginate
+
 
 # Custom vars
 version:             1.1.0

@@ -4,21 +4,22 @@ title: Home
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
+  {% assign sorted_posts = site.posts | sort: "date" %}
+  {% for post in sorted_posts %}
+    <div class="post">
+      <h1 class="post-title">
+        <a href="{{ post.url | absolute_url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      {{ post.content }}
+    </div>
   {% endfor %}
 </div>
-
+{%
+comment
+%}
 <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
@@ -35,3 +36,6 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+{%
+endcomment 
+%}
