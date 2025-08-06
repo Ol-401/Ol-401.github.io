@@ -17,10 +17,9 @@
     {% endcomment %}
 
     {% assign pages_list = site.pages | sort:"url" %}
-      {% for node in pages_list %}
-        {% unless node.title == "Topic1" or node.title == "Critical Thinking" or node.title == "Historical thinking" or node.title == "Topic3" %}
-
-        
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
