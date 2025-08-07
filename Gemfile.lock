@@ -67,3 +67,7 @@ DEPENDENCIES
 
 BUNDLED WITH
    2.7.1
+
+group :jekyll_plugins do
+  gem "github-pages"
+end
