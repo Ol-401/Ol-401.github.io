@@ -5,4 +5,5 @@ title: Themes
 ---
 
 
-<a href="2023-12-23-Music.md">Music</a>
+{% assign music = site.pages | where: "title", "Music" | first %}
+<a href="{{ music.url | relative_url }}">Music</a>
