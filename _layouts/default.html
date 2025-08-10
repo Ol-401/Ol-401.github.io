@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+{% include head.html %}
 
-  {% include head.html %}
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XMXKD3CHE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1XMXKD3CHE');
+  </script> 
+</head>
 
   <body class="theme-base-0c">
 
     {% include sidebar.html %}
+    
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
