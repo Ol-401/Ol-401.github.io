@@ -1,6 +1,5 @@
-
 ---
-layout: Themes
+layout: default
 title: Themes
 ---
 
