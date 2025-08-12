@@ -16,7 +16,7 @@
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
-
+<!--
     {% if site.Themes %}
       <span class="sidebar-nav-heading">Themes</span>
       {% assign Themes_list = site.Themes | sort:"url" %}
@@ -28,7 +28,9 @@
         {% endif %}
       {% endfor %}
     {% endif %}
-
+-->
+    <a class="sidebar-nav-item{% if page.url == '/themes/' %} active{% endif %}" href="{{ '/themes/' | absolute_url }}">Themes</a>
+    
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
       {% if node.title != null %}
