@@ -8,10 +8,22 @@ layout: default
 
 <div>
   <ul>
-  {% assign Themes_name = page.title %}
-  {% for post in site.Themes[Themes_name] %}
+  {% assign themes_name = page.title %}
+  {% for post in site.themes[themes_name] %}
     <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
 </div>
+
+<div>
+  {% assign music = site.pages | where: "title", "Music" | first %}
+<a href="{{ music.url | relative_url }}">Music</a>
+</div>
+
+<div>
+  {% assign The Vegetal World = site.pages | where: "title", "The Vegetal World" | first %}
+<a href="{{ The Vegetal World.url | relative_url }}">The Vegetal World</a>
+</div>
+
+
 

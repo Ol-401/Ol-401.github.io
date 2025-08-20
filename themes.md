@@ -1,6 +1,7 @@
 ---
-layout: Themes
+layout: themes
 title: Themes
+permalink: /themes/
 ---
 
 {% assign music = site.pages | where: "title", "Music" | first %}
