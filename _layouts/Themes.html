@@ -21,8 +21,8 @@ layout: default
 </div>
 
 <div>
-  {% assign The Vegetal World = site.pages | where: "title", "The Vegetal World" | first %}
-<a href="{{ The Vegetal World.url | relative_url }}">The Vegetal World</a>
+  {% assign tvw = site.pages | where: "title", "The Vegetal World" | first %}
+<a href="{{ tvw.url | relative_url }}">The Vegetal World</a>
 </div>
 
 

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: The Vegetal World
-permalink: /tvw/
 ---
 
 **What do we mean by vegetal? How do we as Humans relate to the vegetal world? How have we done in the past, and how has this relationship changed?**
