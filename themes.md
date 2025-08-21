@@ -1,6 +1,6 @@
 ---
 layout: themes
-title: themes
+title: Themes
 permalink: /themes/
 ---
 
