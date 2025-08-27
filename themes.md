@@ -3,7 +3,17 @@ layout: themes
 title: Themes
 permalink: /themes/
 ---
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XMXKD3CHE"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-1XMXKD3CHE');
+  </script>
+</head>
 
 <div>
   {% assign music = site.pages | where: "title", "Music" | first %}
