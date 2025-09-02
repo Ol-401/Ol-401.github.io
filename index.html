@@ -4,16 +4,33 @@ title: Home
 ---
 
 <h1>Learn to Think. Learn to Solve. Learn to Question.</h1>
-<h2>Exploring the ways of thought that shape our understanding of the world.</h2> 
+<h2>Exploring the ways of thought that shape our understanding of the world.</h2>
 
-{% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "themes" %}
-          <a class="sidebar-nav-item{% if page.title == 'themes' %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+<div id="explore">
+  <p>Welcome to <strong>Ways of Thought</strong>, a site dedicated to developing your thinking skills and curiosity. Here, you’ll find practical tools and reflections to help you think effectively, discover perspectives, and see the world more clearly.</p>
+</div>
+
+<div class="section-cards">
+  <div class="card">
+    <h3>The Spell Book</h3>
+    <p>A collection of essays and articles exploring different ways of thinking. Learn the principles that guide reasoning, analogies, and generalisations.</p>
+    <a href="/The_Spell_Book" class="card-link">Explore The Spell Book →</a>
+  </div>
+
+  <div class="card">
+    <h3>Themes</h3>
+    <p>Reflections and exercises designed to put the ideas from the Spell Book into practice. Each Theme is written to spark curiosity and encourage deeper understanding.</p>
+    <a href="/themes" class="card-link">Explore Themes →</a>
+  </div>
+</div>
+
+<p>
+  <div class="footer-invite">
+  <p>Dive in, question assumptions, and explore new ways of thought. Your journey starts here.</p>
+  <a href="/about" class="card-link">Learn More About the Site →</a>
+  </div>
+</p>
+
 
 
 <div class="posts">
@@ -31,4 +48,4 @@ title: Home
   {% endfor %}
 </div>
 
-Hi, there isn't much here yet. This is a work in progress, so please check back later for updates. In the meantime, feel free to explore the sidebar for more information about this site and its purpose.
+
